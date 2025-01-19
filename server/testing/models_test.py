@@ -14,7 +14,7 @@ class TestMessage:
         for message in m:
             db.session.delete(message)
 
-        db.session.commit()
+        db.session.commit() 
 
     def test_has_correct_columns(self):
         '''has columns for message body, username, and creation time.'''

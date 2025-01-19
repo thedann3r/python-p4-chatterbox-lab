@@ -23,7 +23,7 @@ def make_messages():
         message = Message(
             body=fake.sentence(),
             username=rc(usernames),
-        )
+        ) 
         messages.append(message)
 
     db.session.add_all(messages)

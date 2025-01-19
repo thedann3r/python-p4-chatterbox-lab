@@ -12,7 +12,7 @@ class TestApp:
             ).filter(Message.username == "Liza")
 
         for message in m:
-            db.session.delete(message)
+            db.session.delete(message) 
 
         db.session.commit()
 
